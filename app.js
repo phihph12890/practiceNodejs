@@ -16,7 +16,6 @@ mongoose.connection.on('error', err => {
 });
 
 // Middleware
-app.use(morgan('dev'));
 app.use(express.json());
 
 const port = process.env.PORT || 8000
